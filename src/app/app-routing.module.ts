@@ -15,10 +15,10 @@ const routes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'users', loadChildren: usersModule, canActivate: [AuthGuard] },
     { path: 'account', loadChildren: accountModule },
-    { path: 'addEmployee', component: AddEmployeeComponent },
-    { path: 'employees', component: ViewEmployeeComponent },
-    { path: 'details/:id', component: EmployeeComponent },
-    { path: 'editEmployee', component: EditEmployeeComponent },
+    { path: 'addEmployee', component: AddEmployeeComponent, canActivate: [AuthGuard] },
+    { path: 'employees', component: ViewEmployeeComponent, canActivate: [AuthGuard] },
+    { path: 'details/:id', component: EmployeeComponent, canActivate: [AuthGuard] },
+    { path: 'editEmployee', component: EditEmployeeComponent, canActivate: [AuthGuard] },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
