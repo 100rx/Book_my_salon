@@ -3,5 +3,14 @@
         <h1>Hi {{user.firstName}}!</h1>
         <p>You're logged in with Angular 9!!</p>
         <p><a routerLink="/users">Manage Users</a></p>
+        <div>
+            <div class="text-center" style="background-color:seagreen">
+                <!-- <h1 class="text-white">{{title}}</h1> -->
+                <a routerLink="employees"   style="color:yellow">Employee List</a>
+                &nbsp;
+                <a routerLink="addEmployee" style="color:yellow">Add Employee</a>
+            </div>
+            <router-outlet class="container" ></router-outlet>
+        </div>
     </div>
 </div>
