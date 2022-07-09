@@ -22,6 +22,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 import { FormsModule } from '@angular/forms';
+import { AppointmentComponent } from './appointment/appointment.component';
+import { PaymentComponent } from './payments/payment.component';
 @NgModule({
     imports: [
         BrowserModule,
@@ -36,7 +38,7 @@ import { FormsModule } from '@angular/forms';
         AppComponent,
         AlertComponent,
         HomeComponent,
-        EmployeeComponent, AddEmployeeComponent, ViewEmployeeComponent, EditEmployeeComponent
+        EmployeeComponent, AddEmployeeComponent, ViewEmployeeComponent, EditEmployeeComponent, AppointmentComponent, PaymentComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
