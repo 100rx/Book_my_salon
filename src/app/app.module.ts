@@ -24,16 +24,66 @@ import { GooglePayButtonModule } from "@google-pay/button-angular";
 import { FormsModule } from '@angular/forms';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { PaymentComponent } from './payments/payment.component';
+import { TreeViewModule } from "@syncfusion/ej2-angular-navigations";
+
+import {
+    DropDownListAllModule,
+    MultiSelectAllModule
+} from "@syncfusion/ej2-angular-dropdowns";
+
+import {
+    MaskedTextBoxModule,
+    UploaderAllModule
+} from "@syncfusion/ej2-angular-inputs";
+
+import {
+    ToolbarAllModule,
+    ContextMenuAllModule
+} from "@syncfusion/ej2-angular-navigations";
+
+import { ButtonAllModule } from "@syncfusion/ej2-angular-buttons";
+
+import { CheckBoxAllModule } from "@syncfusion/ej2-angular-buttons";
+
+import {
+    DatePickerAllModule,
+    TimePickerAllModule,
+    DateTimePickerAllModule
+} from "@syncfusion/ej2-angular-calendars";
+
+import { NumericTextBoxAllModule } from "@syncfusion/ej2-angular-inputs";
+
+import {
+    ScheduleAllModule,
+    RecurrenceEditorAllModule
+} from "@syncfusion/ej2-angular-schedule";
+
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
-        InMemoryWebApiModule.forRoot(EmployeeData), 
+        InMemoryWebApiModule.forRoot(EmployeeData),
         AppRoutingModule,
         Ng2SearchPipeModule,
-        GooglePayButtonModule
+        GooglePayButtonModule,
+        ScheduleAllModule,
+        RecurrenceEditorAllModule,
+        NumericTextBoxAllModule,
+        DatePickerAllModule,
+        TimePickerAllModule,
+        DateTimePickerAllModule,
+        CheckBoxAllModule,
+        ToolbarAllModule,
+        DropDownListAllModule,
+        ContextMenuAllModule,
+        MaskedTextBoxModule,
+        UploaderAllModule,
+        FormsModule,
+        MultiSelectAllModule,
+        TreeViewModule,
+        ButtonAllModule,
     ],
     declarations: [
         AppComponent,
