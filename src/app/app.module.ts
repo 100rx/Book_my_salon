@@ -19,7 +19,7 @@ import { EditEmployeeComponent } from './home/edit/edit.component';
 import { EmployeeData } from './home/employee-data.service';
 import { EditEmployeeService } from './home/edit-employee.service';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import { GooglePayButtonModule } from "@google-pay/button-angular";
 
 import { FormsModule } from '@angular/forms';
 import { AppointmentComponent } from './appointment/appointment.component';
@@ -32,7 +32,8 @@ import { PaymentComponent } from './payments/payment.component';
         HttpClientModule,
         InMemoryWebApiModule.forRoot(EmployeeData), 
         AppRoutingModule,
-        Ng2SearchPipeModule
+        Ng2SearchPipeModule,
+        GooglePayButtonModule
     ],
     declarations: [
         AppComponent,
