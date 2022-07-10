@@ -1,21 +1,21 @@
 <div class="container">
   <br/>
-  <h1 class="text-center">Employee List</h1>
+  <h1 class="text-center">ALL SALON LIST</h1>
   <br/>
   <div class="row">
   <label for="filter" class="col-3 col-sm-1 text-left">Filter By</label>
-  <input id="filter" name="filter" [(ngModel)]="searchvalue" (input)="search()" class="form-control col-8 offset-sm-0 col-sm-5" placeholder="Enter employee name to search.."/>
+  <input id="filter" name="filter" [(ngModel)]="searchvalue" (input)="search()" class="form-control col-8 offset-sm-0 col-sm-5" placeholder="Enter Salon name to search.."/>
   </div>
-  <label for="count">Total Number of Employees:{{length}}</label>
+  <label for="count">Total Number of Salons Registered with us:- {{length}}</label>
 <table class ="table table-hover text-center table-bordered" align="center">
   <thead class="text-white bg-primary">
-    <th>Emp ID</th>
+    <th>Salon ID</th>
     <th>Name</th>
     <th>Location</th>
     <th>Email</th>
     <th>Mobile</th>
-    <th>Edit</th>
-    <th>Delete</th>
+    <th>Edit(Admin Only)</th>
+    <th>Delete(Admin Only)</th>
   </thead>
   <tr *ngFor="let u of employees; let indexOfElements=index">
     <td>
