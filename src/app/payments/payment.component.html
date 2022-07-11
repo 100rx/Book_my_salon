@@ -1,26 +1,26 @@
 <form class="top-bottom">
     <label class="control">
-      <span>Button color</span>
+      <!-- <span>Button color</span>
       <select name="button-color" [(ngModel)]="buttonColor">
         <option value="default">default</option>
         <option value="black">black</option>
         <option value="white">white</option>
-      </select>
+      </select> -->
     </label>
     <label class="control">
-      <span>Button type</span>
+      <!-- <span>Button type</span>
       <select name="button-type" [(ngModel)]="buttonType">
         <option value="buy">buy</option>
         <option value="plain">plain</option>
         <option value="donate">donate</option>
-      </select>
+      </select> -->
     </label>
-    <label>
+    <!-- <label>
       <input name="button-custom" type="checkbox" [(ngModel)]="isCustomSize" />
       <span>Custom button size</span>
-    </label>
+    </label> -->
     <label class="control">
-      <span>Button width <span class="value">({{buttonWidth}}px)</span></span>
+      <!-- <span>Button width <span class="value">({{buttonWidth}}px)</span></span>
       <input
         name="button-width"
         type="range"
@@ -28,10 +28,10 @@
         max="800"
         [(ngModel)]="buttonWidth"
         [disabled]="!isCustomSize"
-      />
+      /> -->
     </label>
     <label class="control">
-      <span>Button height <span class="value">({{buttonHeight}}px)</span></span>
+      <!-- <span>Button height <span class="value">({{buttonHeight}}px)</span></span>
       <input
         name="button-height"
         type="range"
@@ -39,7 +39,7 @@
         max="100"
         [(ngModel)]="buttonHeight"
         [disabled]="!isCustomSize"
-      />
+      /> -->
     </label>
   </form>
   
